@@ -7,7 +7,7 @@ A component may have two kinds of dependencies
  2. Transitive dependencies 
   -<i>  dependencies that your component needs, but only because another dependency needs them. </i>
            
-### How to Upgrad versions of transitive dependencies ? 
+### How to Upgrade versions of transitive dependencies ? 
 - Direct dependencies can be upgraded to the required version with just a simple command line process <i> 'npm update@dependency-name' </i>. 
 - But in the case of transitive dependencies, you may use <i> 'npm-force-resolutions' </i> method or come up with some work around strategy to upgrade them to required version.
 
@@ -19,7 +19,7 @@ How to use
                      {
                         "hoek": "4.2.1"
                      } 
-- Step 2: add npm-force-resolutions to the preinstall script so that it patches the package-lock file before every npm install you run:
+- Step 2: add npm-force-resolutions to the preinstall script so that it patches the package-lock.json file before every npm install you run:
 
         "scripts":
                   {
